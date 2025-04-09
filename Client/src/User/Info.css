@@ -1,0 +1,183 @@
+body {
+    background-image: url('D:\AdminDashboard\DashStack\Client\src\public\background.png');
+    background-size: cover;
+}
+
+.auth-container {
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px 50px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: small;
+    font-weight: 500;
+    color: #333;
+    text-align: left;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    display: block;
+    margin: 8px auto 20px auto;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.75rem;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+.password-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot-password {
+    font-size: 12px;
+    color: #888888;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: right;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 70%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+.switch-form {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #888888;
+}
+
+.switch-form span {
+    color: #3b82f6;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.switch-form span:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.user-details {
+    text-align: center;
+    padding: 40px;
+    background: #f1f5f9;
+    min-height: 100vh;
+}
+
+pre {
+    background: #e5e7eb;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 500px;
+    overflow-x: auto;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 2px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    accent-color: #3b82f6;
+    cursor: pointer;
+}
+
+.checkbox-container label {
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+@media (max-width: 400px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
