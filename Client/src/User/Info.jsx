@@ -139,12 +139,12 @@ const User = () => {
                         <p>Please enter your email and password to continue </p>
                         {error && <p className="error-message">• {error}</p>}
                         <label htmlFor="email">Email Address:</label>
-                        <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} />
+                        <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" value={formData.email} onChange={handleChange} />
                         <div className="password-container">
                             <label htmlFor="password">Password</label>
                         <a onClick={() => setFormType("forgot")} className="forgot-password">Forget password?</a>
                         </div>
-                        <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} />
+                        <input type="password" id="password" name="password" placeholder="● ● ● ● ● ●" value={formData.password} onChange={handleChange} />
 
                         <div className="checkbox-container">
                             <input type="checkbox" id="remember" />
@@ -162,15 +162,14 @@ const User = () => {
                         <p>Create a account to continue</p>
                         {error && <p className="error-message">• {error}</p>}
                         <label htmlFor="email">Email Address</label>
-                        <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} />
+                        <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" value={formData.email} onChange={handleChange} />
                         <label htmlFor="userName">Username</label>
-                        <input type="text" id="userName" name="userName" value={formData.userName} onChange={handleChange} />
+                        <input type="text" id="userName" name="userName" placeholder="Username" value={formData.userName} onChange={handleChange} />
                         <div className="password-container">
                             <label htmlFor="password">Password</label>
                         <a onClick={() => setFormType("forgot")} className="forgot-password">Forget password?</a>
                         </div>
-                        <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} />
-
+                        <input type="password" id="password" name="password" placeholder="● ● ● ● ● ●" value={formData.password} onChange={handleChange}/>
                         <div className="checkbox-container">
                             <input type="checkbox" id="remember" />
                             <label htmlFor="remember">I accept terms and conditions</label>
@@ -190,6 +189,7 @@ const User = () => {
                             id="email"
                             name="email"
                             value={formData.email}
+                            placeholder="johndoe@gmail.com"
                             onChange={handleChange}
                         />
                         <button type="submit">Reset Password</button>
