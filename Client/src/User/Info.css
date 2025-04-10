@@ -55,7 +55,7 @@ label {
     margin-bottom: 5px;
     font-size: small;
     font-weight: 500;
-    color: #333;
+    color: #a0a0a0;
     text-align: left;
 }
 
@@ -69,12 +69,15 @@ input[type="text"] {
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
+    background-color: #f6f8fc;
+    color: rgb(191, 191, 191);
     font-size: 0.75rem;
     box-sizing: border-box;
 }
 
 input:focus {
-    border-color: #3b82f6;
+    background-color: #f6f8fc;
+    border-color: #888888;
     outline: none;
 }
 
@@ -95,6 +98,24 @@ input:focus {
 .forgot-password:hover {
     text-decoration: underline;
 }
+
+input[type="password"] {
+    padding: 12px 14px;
+    background-color: #f6f8fc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 20px;
+    border-color: #888888;
+    letter-spacing: 4px;
+    color: rgb(192, 191, 191);
+    font-family: Verdana, sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+input[type="password"]::placeholder {
+    color: rgb(196, 194, 194);
+}
+
 
 button {
     width: 70%;
@@ -157,6 +178,7 @@ pre {
     display: flex;
     align-items: center;
     gap: 6px;
+    color: #333;
     margin-top: 2px;
     font-size: 12px;
     margin-bottom: 15px;
@@ -165,13 +187,19 @@ pre {
 .checkbox-container input[type="checkbox"] {
     width: 14px;
     height: 14px;
+    color: #333;
     accent-color: #3b82f6;
     cursor: pointer;
 }
 
 .checkbox-container label {
     cursor: pointer;
+    color: #333;
     margin-top: 5px;
+}
+
+.auth-container ::placeholder {
+    color: rgb(163, 161, 161);
 }
 
 @media (max-width: 400px) {
@@ -180,4 +208,3 @@ pre {
         padding: 20px;
     }
 }
-
