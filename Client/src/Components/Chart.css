@@ -1,0 +1,61 @@
+.main-content {
+    margin-left: 1000px;
+    padding: 2rem;
+    background-color: #f8f9fc;
+    min-height: 100vh;
+}
+
+.dashboard-heading {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.Card {
+    background: #ffffff;
+    padding: 1rem;
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.Card:hover {
+    box-shadow: 0 8px 16px rgba(175, 174, 174, 0.1);
+}
+
+.sales-chart-container {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.sales-chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.sales-chart-header h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.sales-chart-header select {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    background-color: #f9fafb;
+}

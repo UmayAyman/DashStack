@@ -1,0 +1,88 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 10.5rem;
+    margin-top: 0.1rem;
+    width: auto;
+}
+
+.icon-container {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.card-icon {
+    font-size: 28px;
+    padding: 6px;
+    border-radius: 35%;
+}
+
+
+.Card {
+    width: 13.5rem;
+    border: none;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    gap: -20px;
+    padding: 0.5rem;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Card {
+    margin: 0.3rem;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.Card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Card h1 {
+    color: grey;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+    margin-bottom: 7px;
+    text-align: left;
+}
+
+.Card p {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.Card span {
+    color: green;
+    font-size: 9px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.Card small {
+    color: grey;
+    font-size: 9px;
+    font-family: Arial, sans-serif;
+}
+
+.trend-row {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.percentage {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}

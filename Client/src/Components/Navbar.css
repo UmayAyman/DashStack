@@ -1,0 +1,124 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    position: absolute;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo-blue {
+    color: #3b82f6;
+}
+
+.menu-btn {
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.search-box {
+    position: relative;
+    width: 500px;
+}
+
+.search-box input {
+    padding: 7px 10px 7px 30px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: gray;
+}
+
+.notification {
+    position: relative;
+    font-size: 18px;
+}
+
+.badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    padding: 1px 5px;
+    border-radius: 50%;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.flag {
+    width: 24px;
+    height: 16px;
+}
+
+.lang-text {
+    font-size: 14px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 13px;
+}
+
+.name {
+    font-weight: 500;
+}
+
+.role {
+    color: gray;
+    font-size: 12px;
+}
+
+.small-icon {
+    font-size: 10px;
+    color: gray;
+}

@@ -1,9 +1,13 @@
 body {
-    background-image: url('D:\AdminDashboard\DashStack\Client\src\public\background.png');
+    /* background-image: url('D:\AdminDashboard\DashStack\Client\src\public\background.png'); */
     background-size: cover;
+    padding: 0;
+    margin: 0;
 }
 
 .auth-container {
+    background-image: url('D:\AdminDashboard\DashStack\Client\src\public\background.png');
+    background-size: cover;
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
@@ -117,8 +121,8 @@ input[type="password"]::placeholder {
 }
 
 
-button {
-    width: 70%;
+.auth-container button {
+    width: 60%;
     padding: 12px;
     border: none;
     border-radius: 8px;
@@ -127,6 +131,8 @@ button {
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
+    text-align: center;
+    margin-left: 72px;
     transition: background-color 0.3s;
 }
 

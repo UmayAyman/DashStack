@@ -1,0 +1,66 @@
+.deal-details-container {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin: 2rem;
+    width: 79.75%;
+    margin-left: 12.75rem;
+}
+
+.deal-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.month-selector {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #f9f9f9;
+}
+
+.deals-table {
+    width: 95%;
+    margin-left: 22px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.deals-table thead {
+    background-color: #f4f6fb;
+    text-align: left
+}
+
+.deals-table tr {
+    border-radius: 12px;
+}
+
+.deals-table th, .deals-table td {
+    padding: 1rem;
+    font-size: 14px;
+    color: #333;
+}
+
+.product-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-cell img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.status-delivered {
+    background-color: #00c896;
+    padding: 6px 12px;
+    color: white;
+    font-size: 12px;
+    border-radius: 999px;
+}
