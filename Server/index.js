@@ -85,6 +85,90 @@ const verifyToken = (req, res, next) => {
 app.get("/protected", verifyToken, (req, res) => {
 });
 
+app.get("/user/details", verifyToken, (req, res) => {
+    res.json({
+        name: "Haider",
+        image: "https://i.imgur.com/1X9aWvV.png"
+    });
+});
+
+app.get("/dashboard/data", verifyToken, (req, res) => {
+    res.json({
+        users: {
+            count: 40689,
+            change: "4.8%",
+            direction: "up"
+        },
+        orders: {
+            count: 10293,
+            change: "1.3%",
+            direction: "up"
+        },
+        sales: {
+            amount: 89000,
+            change: "4.3%",
+            direction: "down"
+        },
+        pending: {
+            count: 2040,
+            change: "1.8%",
+            direction: "up"
+        }
+    });
+});
+
+app.get("/latest-deals", verifyToken, (req, res) => {
+    const deals = [
+        {
+            product: "Apple Watch",
+            location: "6096 Marjolaine Landing",
+            dateTime: "12.09.2019 - 12.53 PM",
+            piece: "423",
+            amount: "$34,295",
+            status: "Delivered",
+            image: "https://i.imgur.com/1X9aWvV.png",
+        },
+        {
+            product: "iPhone 14 Pro",
+            location: "8132 Olive Street",
+            dateTime: "21.02.2023 - 11.23 AM",
+            piece: "312",
+            amount: "$45,800",
+            status: "Pending",
+            image: "https://i.imgur.com/qQq5eYy.png",
+        },
+        {
+            product: "Samsung Galaxy S22",
+            location: "2301 Mountain Ave",
+            dateTime: "03.06.2022 - 9.45 AM",
+            piece: "150",
+            amount: "$27,990",
+            status: "Shipped",
+            image: "https://i.imgur.com/W5y6pao.png",
+        },
+        {
+            product: "Sony WH-1000XM5",
+            location: "421 Sunset Blvd",
+            dateTime: "11.12.2021 - 6.12 PM",
+            piece: "78",
+            amount: "$12,460",
+            status: "Delivered",
+            image: "https://i.imgur.com/YZzkZ6v.png",
+        },
+        {
+            product: "MacBook Air M2",
+            location: "99 Lincoln Street",
+            dateTime: "05.03.2022 - 2.20 PM",
+            piece: "54",
+            amount: "$59,320",
+            status: "Delivered",
+            image: "https://i.imgur.com/lGJw6Lz.png",
+        }
+    ];
+
+    res.json(deals);
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`✅ Server is running on port ${PORT}`);
